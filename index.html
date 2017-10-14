@@ -1,205 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="fonts-awesome/css/font-awesome.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  		pager:false,
+  		speed:1500,
+  		auto:true,
+  		slideMargin:0
+	});
+});
+	</script>
 </head>
-<body>	
+<body>
 	<div class="wrapper">
 		<div class="section_1">
 			<div class="header">
-			<p class="text_header"> Language: English <i class="fa fa-angle-down" aria-hidden="true"></i>
-				Currency: USD <i class="fa fa-angle-down" aria-hidden="true"></i>
-			</p>
-			<ul class="menu">
-				<li><a href="#">Account |</a></li>
-				<li><a href="#">Wishlsit |</a></li>
-				<li><a href="#">Checkout |</a></li>
-				<li><a href="#">Log in |</a></li>
-				<li><a href="#">Sign Up |</a></li>
-			</ul>
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+				<ul class="menu">
+					<li><a href="#">ВЫБРАТЬ ПИЦЦУ</a></li>
+					<li><a href="#">ВЫБРАТЬ НАПИТОК</a></li>
+					<li><a href="#">АКЦИИ</a></li>
+					<li><a href="#">КОНТАКТЫ</a></li>
+				</ul>
+				<div>
+					<p class="zakaz">Заказать по телефону:</p><br>
+					<p class="nomer_1">+ 38 073 21 40 508</p><br>
+					<p class="nomer_1">+ 38 068 56 99 202</p><br>
+				</div>
+			</div>
+			<div class="slider">
+				<ul class="bxslider">
+		  			<li><img src="img/slider1.png" alt="" /></li>
+		  			<li><img src="img/slider2.jpg" alt="" /></li>
+				</ul>
+			</div>
+			<div id="perexod"></div>
 		</div>
 		<div class="section_2">
-			<p class="text_1"> LEO SHOP
-			</p>
-			<ul class="menu_1">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Women</a></li>
-				<li><a href="#">Men</a></li>
-				<li><a href="#">Other</a></li>
-				<li><a href="#">Purchase</a></li>
-			</ul>
-			<div>
-				<form >
-				  	<input style="height: 25px;" type="text" placeholder="Search..">
-				  	<button type="submit"></button>
-				</form>
+			<p class="top_1">ВЫБРАТЬ ПИЦЦУ</p>
+			<div class="item_1">
+				<img src="img/item1.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left: 200px; margin-top: -70px">61 грн</a>
+				<p class="text1" >Пицца Маргарита 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,<p>помидоры.</p></p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
 			</div>
-			<div class="znachok"><i class="fa fa-tags" aria-hidden="true"></i>
+			<div class="item_1">
+				<img src="img/item2.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">70 грн</a>
+				<p class="text1" >Пицца Прошуто та Фунги 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,грибы шампиньоны,ветчина.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
 			</div>
-			<div class="znachok1"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			<div class="item_1">
+				<img src="img/item3.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">84 грн</a>
+				<p class="text1" >Пицца Салями 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,салями,сыр эдамер.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
 			</div>
-			<div class="text2">
-			CART(0)
+			<div class="item_2">
+				<img src="img/item4.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">84 грн</a>
+				<p class="text1" >Пицца Гавайская 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,ветчина,филе куриное,ананас,кукуруза.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3">
+				<img src="img/item5.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">87 грн</a>
+				<p class="text1" >Пицца Экзотика 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,сливки,<p>филе </p>куриное,ананас.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3">
+				<img src="img/item6.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">88 грн</a>
+				<p class="text1" >Пицца Вегетарианская 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,грибы шампиньоны,брокколи,помидоры.перец болгарский. </p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_2">
+				<img src="img/item7.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">94 грн</a>
+				<p class="text1" >Пицца Портабелло 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,сливки,бекон,ветчина,<p>филе куриное.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3" >
+				<img src="img/item8.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">94 грн</a>
+				<p class="text1" >Пицца Европейская 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,сливки,салями,ветчина,<p>филе куриное, сыр Эдамер</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3" >
+				<img src="img/item9.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">97 грн</a>
+				<p class="text1" >Пицца Феличита 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,бекон,свинина,помидор. </p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_2">
+				<img src="img/item10.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">98 грн</a>
+				<p class="text1" >Пицца Казацкая 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус  томатный,<p>салями,бекон,свинина, <p>лук,помидор. </p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3" >
+				<img src="img/item11.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">98 грн</a>
+				<p class="text1" >Пицца Четыре сыра 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр Моцарелла,сливки,<p>сыр Дор блю,сыр Эдамер,<p>сыр Пармезан. </p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3" >
+				<img src="img/item12.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">99 грн</a>
+				<p class="text1" >Пицца Неаполь 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,грибы шампиньоны,ветчина,бекон,сосиски баварские.маслины.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_2">
+				<img src="img/item13.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">99 грн</a>
+				<p class="text1" >Пицца Баварская 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,горчица,<p>грибы шампиньоны,ветчина,сосиски баварские,колбаски охотничьи,перец болгарский.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3" >
+				<img src="img/item14.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">104 грн </a>
+				<p class="text1" >Пицца Охотничья 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,сливки,грибы шампиньоны,ветчина,колбаски охотничьи,огурцы маринованные,грибы опята маринаванные. </p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_3" >
+				<img src="img/item15.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">105 грн </a>
+				<p class="text1" >Пицца Мясная 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,салями,бекон,<p>филе куриное,лук,<p>свинина.</p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
+			</div>
+			<div class="item_2" style="margin-top: 120px;">
+				<img src="img/item16.jpg">
+				<a href='#' class='button_1'>30</a>
+				<a href='#' class="button_2">45</a>
+				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">114  грн</a>
+				<p class="text1" >Пицца Тоскана 30см</p>
+				<p><span>Состав:</span></p>
+				<p>Сыр моцарелла,соус томатный,салями,сосиски баварские,колбаски охотничьи,перец болгарский,маслины, лук. </p>
+				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
 			</div>
 		</div>
 		<div class="section_3">
-			<div class="arrow"><i class="fa fa-chevron-left fa-3x" aria-hidden="true" ></i>
-			</div>
-			<div class="text_3">ALUMUNIUM CLUB
-			</div>
-			<div class="arrow1"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
-			</div>
-		</div>
-		<div class="section_4">
-			<p class="text_1">FEATURED PRODUCT</p>
-			<div class="glass_1">
-				<img src="img/glass1.jpg">
-			</div>
-			<div class="glass_2">
-				<img src="img/glass2.jpg">
-			</div>
-			<div class="glass_3">
-				<img src="img/glass3.jpg">
-			</div>
-			<div class="glass_4">
-				<img src="img/glass4.jpg">
-			</div>
-			<div class="glass_5">
-				<img src="img/glass5.jpg">
-			</div>
-			<div class="glass_6">
-				<img src="img/glass6.jpg">
-			</div>
-			<div class="glass_7">
-				<img src="img/glass7.jpg">
-			</div>
-			<div class="glass_8">
-				<img src="img/glass8.jpg">
-			</div>
-			<div class="glass_9">
-				<img src="img/glass9.jpg">
+			<div class="one">
+				<i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
 			</div>
 			<div>
-			 <p class="text_2">STAFF PICK</p>
-			 	<div class="glass_10">
-					<img src="img/glass10.jpg">
-				</div>
-				<div class="glass_11">
-					<img src="img/glass11.jpg">
-				</div>
-				<div class="glass_12">
-					<img src="img/glass12.jpg">
-				</div>
-			</div>
-			<div>
-				<p class="text_3">NEW PRODUCTS</p>
-				<div class="glass_13">
-					<img src="img/glass13.jpg">
-				</div>
-				<div class="glass_14">
-					<img src="img/glass14.jpg">
-				</div>
-				<div class="glass_15">
-					<img src="img/glass15.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="section_5">
-			<div>
-				<div class="z_1"><i class="fa fa-truck fa-2x" aria-hidden="true" ></i>
-				</div>
-				<p class="text_1">FREE SHIPPING ON ORDERS OVER $100</p>
-				<div class="z_2"><i style="margin-left: 13px;" style="margin-top: 23px"; class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-				</div>
-				<p class="text_1">CALL US! 38 093 51 69 167</p>
-			</div>
-		</div>
-		<div class="section_6">
-			<div class="item_1">
-				<p class="text_1">FACEBOOK</p>
-				<p class="text_2">20000 Members</p>
-			<div>
-				<img  style="border-radius: 5px"; src="img/like.jpg">
-			</div>
-			<hr>
-			<div class="photo_1">
-				<img src="img/photo1.jpg">
-			</div>
-			<div class="photo_2">
-				<img src="img/photo2.jpg">
-			</div>
-			<div class="photo_3">
-				<img src="img/photo3.jpg">
-			</div>
-			<div class="photo_4">
-				<img src="img/photo4.jpg">
-			</div>
-			<div class="photo_5">
-				<img src="img/photo3.jpg">
-			</div>
-			<div class="photo_6">
-				<img src="img/photo4.jpg">
-			</div>
-			<div class="photo_2">
-				<img src="img/photo2.jpg">
-			</div>
-			<div class="photo_7">
-				<img src="img/photo1.jpg">
-			</div>
-		</div>
-		<div class="item_2">
-			<p class="text_1">FROM TWITTER</p>
-			<div class="logo_1">
-				<img src="img/logo1.jpg">
-				<p class="text_3">Lorem Ipsum is simply dummy text of 
-				<p class="text_4"> the printing and typesettin industry.<p class="text_5"> Lorem Ipsum has been the</p> </p></p>
-			</div>
-			<div class="logo_1">
-				<img src="img/logo1.jpg">
-				<p class="text_3">Lorem Ipsum is simply dummy text of 
-				<p class="text_4"> the printing and typesettin industry.<p class="text_5"> Lorem Ipsum has been the</p> </p></p>
-			</div>
-		</div>
-		<div class="item_3">
-			<p class="text_1">INFORMATION</p>
-			<div style="margin-top: 20px;" class="one">
-				<i style="color:white; margin-top: 7px;" class="fa fa-angle-right fa-1x" aria-hidden="true"></i><p class="text_6">Sed ultrices purus non. </p>
+				<p class="text_1">г.Фастов</p>
 			</div>
 			<div class="two">
-				<i style="color:white; margin-top: 7px;" class="fa fa-angle-right fa-1x" aria-hidden="true"></i><p class="text_7">sodales sodales. </p>
-			</div>
-			<div class="three">
-				<i style="color:white; margin-top: 7px;" class="fa fa-angle-right fa-1x" aria-hidden="true"></i><p class="text_8">Curabitur pretium dui vitae. </p>
-			</div>
-			<div class="four">
-				<i style="color:white; margin-top: 7px;" class="fa fa-angle-right fa-1x" aria-hidden="true"></i><p class="text_9">Donec gravida mi in nisl</p>
-			</div>
-			<div class="five">
-				<i style="color:white; margin-top: 7px;" class="fa fa-angle-right fa-1x" aria-hidden="true"></i><p class="text_10">faucibus leo condimentum.</p>
-			</div>
-		</div>
-		<div class="item_4">
-			<p class="text_1">CONTACT US</p>
-			<p style="margin-top: 25px;"  class="text_11">Leo Store</p>
-			<p class="text_12">Leopards media</p>
-			<p class="text_12">KVM Rpad, 4590GH</p>
-			<p class="text_12">+1 489-8888-0099</p>
-			<p class="text_12">mail@email.com</p>
-			<hr>
-			<div class="smm_1">
-				<img style="border-radius: 25px;" src="img/smm1.jpg">
-			</div>
-			<div class="smm_2">
-				<img style="border-radius: 25px;" src="img/smm2.jpg">
-			</div>
-			<div class="smm_3">
-				<img style="border-radius: 25px;" src="img/smm3.jpg">
-			</div>
-			<div class="smm_4">
-				<img style="border-radius: 25px;" src="img/smm4.jpg">
+				<a href="https://vk.com/id385946926"><i class="fa fa-vk fa-2x" aria-hidden="true"><span>Вконтакте</span></i></a>
+				<a href="https://ok.ru"><i class="fa fa-odnoklassniki fa-2x" aria-hidden="true"><span>Однокласники</span></i></a>
+				<a href="https://www.instagram.com/pizzafastov/"><i class="fa fa-instagram fa-2x" aria-hidden="true"><span>Инстаграм</span></i></a>
 			</div>
 		</div>
 	</div>
