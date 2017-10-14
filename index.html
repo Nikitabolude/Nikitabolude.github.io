@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="fonts-awesome/css/font-awesome.min.css">
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
@@ -12,215 +11,152 @@
   		$('.bxslider').bxSlider({
   		pager:false,
   		speed:1500,
-  		auto:true,
-  		slideMargin:0
+  		slideMargin:0,
 	});
 });
+		$(document).ready(function(){
+$('a[href*=#]').bind("click", function(e){
+var anchor = $(this);
+$('html, body').stop().animate({
+scrollTop: $(anchor.attr('href')).offset().top
+}, 1000);
+e.preventDefault();
+});
+return false;
+});
 	</script>
+	
 </head>
 <body>
-	<div class="wrapper">
-		<div class="section_1">
-			<div class="header">
-				<div class="logo">
-					<img src="img/logo.png">
-				</div>
-				<ul class="menu">
-					<li><a href="#">ВЫБРАТЬ ПИЦЦУ</a></li>
-					<li><a href="#">ВЫБРАТЬ НАПИТОК</a></li>
-					<li><a href="#">АКЦИИ</a></li>
-					<li><a href="#">КОНТАКТЫ</a></li>
-				</ul>
-				<div>
-					<p class="zakaz">Заказать по телефону:</p><br>
-					<p class="nomer_1">+ 38 073 21 40 508</p><br>
-					<p class="nomer_1">+ 38 068 56 99 202</p><br>
-				</div>
-			</div>
-			<div class="slider">
-				<ul class="bxslider">
-		  			<li><img src="img/slider1.png" alt="" /></li>
-		  			<li><img src="img/slider2.jpg" alt="" /></li>
-				</ul>
-			</div>
-			<div id="perexod"></div>
+<div class="wrapper">
+	<div class="section_1">
+		<div class="header">
+			<p class="firma">Fitness<span> Club</span></p>
+			<ul class="menu">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Особенности</a></li>
+				<li><a href="#2">Наша команда</a></li>
+				<li><a href="#3">Галерея</a></li>
+				<li><a href="#4">Цены</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
 		</div>
-		<div class="section_2">
-			<p class="top_1">ВЫБРАТЬ ПИЦЦУ</p>
-			<div class="item_1">
-				<img src="img/item1.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left: 200px; margin-top: -70px">61 грн</a>
-				<p class="text1" >Пицца Маргарита 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,<p>помидоры.</p></p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_1">
-				<img src="img/item2.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">70 грн</a>
-				<p class="text1" >Пицца Прошуто та Фунги 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,грибы шампиньоны,ветчина.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_1">
-				<img src="img/item3.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">84 грн</a>
-				<p class="text1" >Пицца Салями 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,салями,сыр эдамер.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_2">
-				<img src="img/item4.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">84 грн</a>
-				<p class="text1" >Пицца Гавайская 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,ветчина,филе куриное,ананас,кукуруза.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3">
-				<img src="img/item5.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">87 грн</a>
-				<p class="text1" >Пицца Экзотика 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,сливки,<p>филе </p>куриное,ананас.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3">
-				<img src="img/item6.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">88 грн</a>
-				<p class="text1" >Пицца Вегетарианская 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,грибы шампиньоны,брокколи,помидоры.перец болгарский. </p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_2">
-				<img src="img/item7.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">94 грн</a>
-				<p class="text1" >Пицца Портабелло 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,сливки,бекон,ветчина,<p>филе куриное.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3" >
-				<img src="img/item8.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">94 грн</a>
-				<p class="text1" >Пицца Европейская 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,сливки,салями,ветчина,<p>филе куриное, сыр Эдамер</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3" >
-				<img src="img/item9.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">97 грн</a>
-				<p class="text1" >Пицца Феличита 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,бекон,свинина,помидор. </p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_2">
-				<img src="img/item10.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">98 грн</a>
-				<p class="text1" >Пицца Казацкая 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус  томатный,<p>салями,бекон,свинина, <p>лук,помидор. </p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3" >
-				<img src="img/item11.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">98 грн</a>
-				<p class="text1" >Пицца Четыре сыра 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр Моцарелла,сливки,<p>сыр Дор блю,сыр Эдамер,<p>сыр Пармезан. </p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3" >
-				<img src="img/item12.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">99 грн</a>
-				<p class="text1" >Пицца Неаполь 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,грибы шампиньоны,ветчина,бекон,сосиски баварские.маслины.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_2">
-				<img src="img/item13.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">99 грн</a>
-				<p class="text1" >Пицца Баварская 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,горчица,<p>грибы шампиньоны,ветчина,сосиски баварские,колбаски охотничьи,перец болгарский.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3" >
-				<img src="img/item14.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">104 грн </a>
-				<p class="text1" >Пицца Охотничья 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,сливки,грибы шампиньоны,ветчина,колбаски охотничьи,огурцы маринованные,грибы опята маринаванные. </p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_3" >
-				<img src="img/item15.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">105 грн </a>
-				<p class="text1" >Пицца Мясная 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,салями,бекон,<p>филе куриное,лук,<p>свинина.</p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-			<div class="item_2" style="margin-top: 120px;">
-				<img src="img/item16.jpg">
-				<a href='#' class='button_1'>30</a>
-				<a href='#' class="button_2">45</a>
-				<a href='#' class="button" style="margin-left:200px; margin-top: -70px">114  грн</a>
-				<p class="text1" >Пицца Тоскана 30см</p>
-				<p><span>Состав:</span></p>
-				<p>Сыр моцарелла,соус томатный,салями,сосиски баварские,колбаски охотничьи,перец болгарский,маслины, лук. </p>
-				<a class="button" href="#" style="margin-top: 10px;">Выбрать</a>
-			</div>
-		</div>
-		<div class="section_3">
-			<div class="one">
-				<i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
-			</div>
-			<div>
-				<p class="text_1">г.Фастов</p>
-			</div>
-			<div class="two">
-				<a href="https://vk.com/id385946926"><i class="fa fa-vk fa-2x" aria-hidden="true"><span>Вконтакте</span></i></a>
-				<a href="https://ok.ru"><i class="fa fa-odnoklassniki fa-2x" aria-hidden="true"><span>Однокласники</span></i></a>
-				<a href="https://www.instagram.com/pizzafastov/"><i class="fa fa-instagram fa-2x" aria-hidden="true"><span>Инстаграм</span></i></a>
-			</div>
+		<div class="slider">
+			<ul class="bxslider">
+		  		<li><img src="img/slider.jpg" alt="" /></li>
+		  		<li><img src="img/slider1.jpg" alt="" /></li>
+			</ul>
 		</div>
 	</div>
+	<div  class="section_2">
+			<h1 >Добро пожаловать в Fitness club</h1>
+			<div class="container_1">
+				<div class="item">
+					<i  class="fa fa-star fa-2x " style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Стретчинг тренеровка</p>
+					<p class="description">Стретчинг увеличивает гибкость и подвижность суставов.Например, ношение сумок, завязывание шнурков или преследование уходящего автобуса будет для вас легким делом.</p>
+				</div>
+				<div class="item">
+					<i class="fa fa-heartbeat fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Кардио тренеровка</p>
+					<p class="description">Говоря о кардио-тренировках, мы подразумеваем комплекс упражнений, направленных на развитие сердечно-сосудистой системы организма и
+					устойчивым иммунитетом </p>
+				</div>
+				<div class="item">
+					<i class="fa fa-smile-o fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Гимнастика</p>
+					<p class="description">Ежедневные упражнения помогут ребенку развить двигательные навыки и умения, укрепить осанку. У ребенка вырабатывается сила воли, твердость характера, уверенность в движениях. </p>
+				</div>
+				<div class="item">
+					<i class="fa fa-users fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Аэробика</p>
+					<p class="description">Занятия оздоровительной аэробикой стимулируют работу сердечно – сосудистой и дыхательной систем.Происходит меньше простудных забловении.</p>
+				</div>
+		</div>
+	</div>
+	<div class="section_3" id="2">
+		<h1 >Лучшие Тренера</h1>
+			<div class="container_2">
+				<div class="item_2">
+					<li style="margin-left: 12%"><span class="descr">Тренер по стретчингу</span><img src="img/item1.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_2">
+					<li><span class="descr">Тренер по плаванию</span><img src="img/item2.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_2">		
+					<li><span class="descr">Тренер по гимнастике</span><img src="img/item3.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_2">	
+					<li><span class="descr">Тренер по аэробике</span><img src="img/item4.jpg" alt="Alt"></li>
+				</div>	
+			</div>
+	</div>
+	<div class="section_4" id="3">
+		<h1>Наша галерея</h1>
+		<div class="item_2"><img src="img/item2.1.jpg">
+		</div>
+		<div class="item_3"><img src="img/item2.2.jpg">
+		</div>
+		<div class="item_3"><img src="img/item2.3.jpg">
+		</div>
+		<div class="item_3"><img src="img/item2.4.jpg">
+		</div>
+		<div class="item_2"><img src="img/item2.5.jpg">
+		</div>
+		<div class="item_3"><img src="img/item2.6.jpg">
+		</div>
+		<div class="item_3"><img src="img/item2.7.jpg">
+		</div>
+		<div class="item_3"><img src="img/item2.8.jpg">
+		</div>
+	</div>
+	<div class="section_5" id="4">
+		<h1>Цены и планы</h1>
+		<div class="item_1">
+			<div class="header">
+				<p class="text_1">Начальный</p>
+			</div>
+			<i class="fa fa-check-circle" aria-hidden="true"> - 5 тренеровик в неделю</i><br>
+			<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+			<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3500 грн</i><br>
+		</div>
+		<div class="item_2">
+			<div class="header">
+				<p class="text_2">Базовый</p>
+			</div>
+			<i class="fa fa-check-circle" aria-hidden="true"> - 7 тренеровик в неделю</i><br>
+			<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+			<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3700 грн</i><br>
+		</div>
+		<div class="item_3">
+			<div class="header">
+				<p class="text_3">Профессионал</p>
+			</div>
+			<i class="fa fa-check-circle" aria-hidden="true"> - 9 тренеровик в неделю</i><br>
+			<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+			<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3900 грн</i><br>
+		</div>
+		</div>
+		<div class="section_6">
+			<form>
+				<div>
+					<input type="name" name="Имя" placeholder="Имя*">
+				</div>				
+				<div>
+					<input type="email" name="email" placeholder="Email*">
+				</div>
+				<div>
+					<input type="text" name="text" placeholder="Вид спорта*">
+				</div>
+				<div>
+					<textarea placeholder="Ваше сообщение*"></textarea><br>
+				</div>
+				<div >
+					<input type="submit" name="submit" placeholder="Отправить заявку*"> 
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 </body>
 </html>
