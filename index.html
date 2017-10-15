@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  		pager:false,
+  		speed:1500,
+  		slideMargin:0,
+	});
+});
+		$(document).ready(function(){
+$('a[href*=#]').bind("click", function(e){
+var anchor = $(this);
+$('html, body').stop().animate({
+scrollTop: $(anchor.attr('href')).offset().top
+}, 1000);
+e.preventDefault();
+});
+return false;
+});
+	</script>
+	
+</head>
+<body>
+<div class="wrapper">
+	<div class="section_1">
+		<div class="header">
+			<p class="firma">Fitness<span> Club</span></p>
+			<div class="container_6">
+				<ul class="menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Особенности</a></li>
+					<li><a href="#2">Наша команда</a></li>
+					<li><a href="#3">Галерея</a></li>
+					<li><a href="#4">Цены</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="slider">
+			<ul class="bxslider">
+		  		<li><img src="img/slider.jpg" alt="" /></li>
+		  		<li><img src="img/slider1.jpg" alt="" /></li>
+			</ul>
+		</div>
+	</div>
+	<div  class="section_2">
+			<h1 >Добро пожаловать в Fitness club</h1>
+			<div class="container_1">
+				<div class="item">
+					<i  class="fa fa-star fa-2x " style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Стретчинг тренеровка</p>
+					<p class="description">Стретчинг увеличивает гибкость и подвижность суставов.Например, ношение сумок, завязывание шнурков или преследование уходящего автобуса будет для вас легким делом.</p>
+				</div>
+				<div class="item">
+					<i class="fa fa-heartbeat fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Кардио тренеровка</p>
+					<p class="description">Говоря о кардио-тренировках, мы подразумеваем комплекс упражнений, направленных на развитие сердечно-сосудистой системы организма и
+					устойчивым иммунитетом </p>
+				</div>
+				<div class="item">
+					<i class="fa fa-smile-o fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Гимнастика</p>
+					<p class="description">Ежедневные упражнения помогут ребенку развить двигательные навыки и умения, укрепить осанку. У ребенка вырабатывается сила воли, твердость характера, уверенность в движениях. </p>
+				</div>
+				<div class="item">
+					<i class="fa fa-users fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Аэробика</p>
+					<p class="description">Занятия оздоровительной аэробикой стимулируют работу сердечно – сосудистой и дыхательной систем.Происходит меньше простудных забловении.</p>
+				</div>
+		</div>
+	</div>
+	<div class="section_3" id="2">
+		<h1 >Лучшие Тренера</h1>
+			<div class="container_2">
+				<div class="item_2">
+					<li style="margin-left: 12%"><span class="descr">Тренер по стретчингу</span><img src="img/item1.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_2">
+					<li><span class="descr">Тренер по плаванию</span><img src="img/item2.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_2">		
+					<li><span class="descr">Тренер по гимнастике</span><img src="img/item3.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_2">	
+					<li><span class="descr">Тренер по аэробике</span><img src="img/item4.jpg" alt="Alt"></li>
+				</div>	
+			</div>
+	</div>
+	<div class="section_4" id="3">
+		<h1>Наша галерея</h1>
+		<div class="container_3">
+			<div class="item_1"><img src="img/item2.1.jpg">
+			</div>
+			<div class="item_1"><img src="img/item2.2.jpg">
+			</div>
+			<div class="item_1"><img src="img/item2.3.jpg">
+			</div>
+			<div class="item_1"><img src="img/item2.4.jpg">
+			</div>
+		</div>
+		<div class="container_4">
+			<div class="item_1"><img src="img/item2.5.jpg">
+			</div>
+			<div class="item_1"><img src="img/item2.6.jpg">
+			</div>
+			<div class="item_1"><img src="img/item2.7.jpg">
+			</div>
+			<div class="item_1"><img src="img/item2.8.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="section_5" id="4">
+		<h1>Цены и планы</h1>
+		<div class="container_5">
+			<div class="item_1">
+				<div class="header">
+					<p class="text_1">Начальный</p>
+				</div>
+				<i class="fa fa-check-circle" aria-hidden="true"> - 5 тренеровик в неделю</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3500 грн</i><br>
+			</div>
+			<div class="item_1">
+				<div class="header">
+					<p class="text_1">Базовый</p>
+				</div>
+				<i class="fa fa-check-circle" aria-hidden="true"> - 7 тренеровик в неделю</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3700 грн</i><br>
+			</div>
+			<div class="item_1">
+				<div class="header">
+					<p class="text_1">Профессионал</p>
+				</div>
+				<i class="fa fa-check-circle" aria-hidden="true"> - 9 тренеровик в неделю</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3900 грн</i><br>
+			</div>
+		</div>
+		<div class="section_6">
+			<form>
+				<div>
+					<input type="name" name="Имя" placeholder="Имя*">
+				</div>				
+				<div>
+					<input type="email" name="email" placeholder="Email*">
+				</div>
+				<div>
+					<input type="text" name="text" placeholder="Вид спорта*">
+				</div>
+				<div>
+					<textarea placeholder="Ваше сообщение*"></textarea><br>
+				</div>
+				<div >
+					<input type="submit" name="submit" placeholder="Отправить заявку*"> 
+				</div>
+			</form>
+		</div>
+</body>
+</html>
