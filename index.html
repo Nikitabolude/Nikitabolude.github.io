@@ -27,24 +27,30 @@ e.preventDefault();
 return false;
 });
 	</script>
-	
 </head>
 <body>
+<header>
 <div class="wrapper">
 	<div class="section_1">
 		<div class="header">
 			<p class="firma">Fitness<span> Club</span></p>
-			<div class="container_6">
-				<ul class="menu">
+			<input type="checkbox" id="menu">
+			<div class="leb-menu">
+				<label for="menu"><img src="img/icono-menu.png"></label>
+			</div>
+			<nav class="menu">
+				<div class="section-inner">
+				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Особенности</a></li>
-					<li><a href="#2">Наша команда</a></li>
+					<li><a href="#2">Команда</a></li>
 					<li><a href="#3">Галерея</a></li>
 					<li><a href="#4">Цены</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-			</div>
+			</nav>
 		</div>
+
 		<div class="slider">
 			<ul class="bxslider">
 		  		<li><img src="img/slider.jpg" alt="" /></li>
@@ -52,6 +58,7 @@ return false;
 			</ul>
 		</div>
 	</div>
+</header>
 	<div  class="section_2">
 			<h1 >Добро пожаловать в Fitness club</h1>
 			<div class="container_1">
@@ -81,16 +88,16 @@ return false;
 	<div class="section_3" id="2">
 		<h1 >Лучшие Тренера</h1>
 			<div class="container_2">
-				<div class="item_2">
-					<li style="margin-left: 12%"><span class="descr">Тренер по стретчингу</span><img src="img/item1.jpg" alt="Alt"></li>
+				<div class="item_1">
+					<li><span class="descr">Тренер по стретчингу</span><img src="img/item1.jpg" alt="Alt"></li>
 				</div>
-				<div class="item_2">
+				<div class="item_1">
 					<li><span class="descr">Тренер по плаванию</span><img src="img/item2.jpg" alt="Alt"></li>
 				</div>
-				<div class="item_2">		
+				<div class="item_1">		
 					<li><span class="descr">Тренер по гимнастике</span><img src="img/item3.jpg" alt="Alt"></li>
 				</div>
-				<div class="item_2">	
+				<div class="item_1">	
 					<li><span class="descr">Тренер по аэробике</span><img src="img/item4.jpg" alt="Alt"></li>
 				</div>	
 			</div>
@@ -98,23 +105,23 @@ return false;
 	<div class="section_4" id="3">
 		<h1>Наша галерея</h1>
 		<div class="container_3">
-			<div class="item_1"><img src="img/item2.1.jpg">
+			<div class="item_1"><img src="img/item2.1.jpg" alt="">
 			</div>
-			<div class="item_1"><img src="img/item2.2.jpg">
+			<div class="item_1"><img src="img/item2.2.jpg" alt="">
 			</div>
-			<div class="item_1"><img src="img/item2.3.jpg">
+			<div class="item_1"><img src="img/item2.3.jpg" alt="">
 			</div>
-			<div class="item_1"><img src="img/item2.4.jpg">
+			<div class="item_1"><img src="img/item2.4.jpg" alt="">
 			</div>
 		</div>
-		<div class="container_4">
-			<div class="item_1"><img src="img/item2.5.jpg">
+		<div class="container_3">
+			<div class="item_1"><img src="img/item2.5.jpg" alt="">
 			</div>
-			<div class="item_1"><img src="img/item2.6.jpg">
+			<div class="item_1"><img src="img/item2.6.jpg" alt="">
 			</div>
-			<div class="item_1"><img src="img/item2.7.jpg">
+			<div class="item_1"><img src="img/item2.7.jpg" alt="">
 			</div>
-			<div class="item_1"><img src="img/item2.8.jpg">
+			<div class="item_1"><img src="img/item2.8.jpg" alt="">
 			</div>
 		</div>
 	</div>
@@ -148,19 +155,21 @@ return false;
 		</div>
 		<div class="section_6">
 			<form>
-				<div>
-					<input type="name" name="Имя" placeholder="Имя*">
-				</div>				
-				<div>
-					<input type="email" name="email" placeholder="Email*">
+				<div class="container_6">
+					<div>
+						<input type="name" name="Имя" placeholder="Имя*">
+					</div>				
+					<div >
+						<input type="email" name="email" placeholder="Email*">
+					</div>
+					<div >
+						<input type="text" name="text" placeholder="Вид спорта*">
+					</div>
 				</div>
-				<div>
-					<input type="text" name="text" placeholder="Вид спорта*">
-				</div>
-				<div>
+				<div class="container_7">
 					<textarea placeholder="Ваше сообщение*"></textarea><br>
 				</div>
-				<div >
+				<div>
 					<input type="submit" name="submit" placeholder="Отправить заявку*"> 
 				</div>
 			</form>

@@ -3,13 +3,6 @@
 	padding: 0px;
 }
 
-.wrapper{
-	max-width: 1350px;
-	min-width: 1200px;
-	margin: auto;
-}
-
-
 .section_1 {
 	height: 410px;
 }
@@ -19,40 +12,46 @@
 }
 
 .section_1 .firma{
-	width: 12%;
+	width: 10%;
 	text-transform: uppercase;
 	font-family:Arial;
 	color: white;
-	font-size: 20px;
+	font-size: 15px;
 	padding-top: 35px;
 	margin-left: 10%;
 }
-
-.section_1 .container_6{
-	display: flex;
+#menu,
+header label{
+	display: none;
 }
-.section_1 .menu{
-	display: inline-block;
-	width: 50%;
-	margin-left: 50%;
-	margin-top: -30px;
+header nav,
+header .leb-menu{
+	background-color: #202020;
 }
 
-.section_1 .menu li{
-	display: inline-block;
-	text-align: center;
-	padding: 12px;
-	margin-left: 1%;
-	transition: 450ms;
-}
+.section_1 .menu {
+ 	z-index: 100;
+ 	margin-left: 10%;
 
-.section_1 .menu li:hover{
-	background: #E25050;
 }
-.section_1 .menu a{
-	text-decoration:none;
-	color: white;
-	font-size: 15px;
+.section_1 .menu ul {
+	 margin: 0;
+	 list-style: none;
+	 padding: 0;
+	 display: flex;
+	 justify-content: center;
+	 margin-top: -30px;
+}
+.section_1 .menu li:hover {
+ background: #E25050;
+}
+.section_1 .menu li a {
+ display: block;
+ padding: 15px 15px;
+ color: #fff;
+ text-decoration: none;
+ text-transform:uppercase;
+ font-size: 16px;
 }
 .slider{
     max-width: 1400px;
@@ -101,7 +100,7 @@
 }
 
 .section_2 h1{
-	margin-left: 32%;
+	text-align: center;
 	margin-top: 10px;
 }
 
@@ -135,19 +134,20 @@
 }
 
 .section_3 h1{
+	text-align: center;
 	margin-top: 20px;
 	color: white;
-	margin-left: 40%;
 }
 
 .section_3 .container_2{
 	display: flex;
-	justify-content: space-around;
-	margin-top: 30px;
+	justify-content: center;
+	margin-top: 40px;
 }
 
-.section_3 .item_2{
-	width: 20%;
+.section_3 .item_1{
+	width: 250px;
+	margin-left: 20px;
 }
 
 .ourTeam ul,
@@ -197,26 +197,18 @@
 .section_4 h1{
 	margin-top: 10px;
 	color: black;
-	margin-left: 40%;
+	text-align: center;
 }
 
 .section_4 .container_3{
 	display:flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-top: 40px;
 }
 .section_4 .item_1{
-	width: 20%;
+	width: 291px;
+	margin-left: 40px;
 }
-.section_4 .container_4{
-	display:flex;
-	justify-content: space-around;
-	margin-top: 40px;
-}
-.section_4 .item_2{
-	width: 20%;
-}
-
 
 .section_5 {
 	height: 350px;
@@ -224,7 +216,8 @@
 }
 .section_5 h1{
 	color: white;
-	margin-left: 40%;
+	text-align: center;
+
 }
 .section_5 .container_5{
 	display:flex;
@@ -233,7 +226,7 @@
 }
 .section_5 .item_1{
 	width: 25%;
-	height: 170px;
+	height: auto;
 	background-color: #D24443;
 	border-radius: 15px;
 	transition: 0.5s;
@@ -253,32 +246,41 @@
 }
 
 .section_5 .text_1{
-	float: left;
+	text-align: center;
 	font-size: 20px;
 	color: white;
-	margin-top: 10px;
-	margin-left: 110px;
+	padding: 4%;
 }
 
 .section_5 .fa{
-	margin-left: 35px;
-	margin-top: 17px;
-	margin-right: 5px;
+	padding: 15px;
 }
 .section_6 {
 	height: 400px;
 	background: #202020;
 }
 
+.section_6 .container_6 div{
+	position: relative;
+}
+
+.section_6 .container_7 div{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 input[type="name"],input[type="email"],input[type="text"]{
-	float: left;
-	clear: both;
+	display: flex;
+	position: relative;
+	top: 50px;
+	flex-direction: column;
+	justify-content: center;
 	background-image: none; 
   	background: transparent;
-	width: 420px;
+	width: 30%;
 	height: 50px;
 	font-size: 18px;
-	margin-top: 45px;
+	margin-top: 40px;
 	margin-left: 10%;
 	border:1px solid white;
 	border-radius: 5px;
@@ -287,12 +289,13 @@ input[type="name"],input[type="email"],input[type="text"]{
 }
 
 textarea{
+	display: flex;
 	width: 45%;
 	height: 250px;
 	background-image: none; 
   	background: transparent;
-	margin-left: 3%;
-	margin-top: 45px;
+	margin-left: 45%;
+	margin-top: -185px;
 	border-radius: 5px;
 	font-size: 18px;
 	color:gray;
@@ -312,3 +315,5 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	background:#FFC0CB;
 }
+
+
