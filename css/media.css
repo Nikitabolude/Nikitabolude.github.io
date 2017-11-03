@@ -616,8 +616,61 @@ header label{
 	text-decoration: none;
 }
 
+
 .section_1 .knopka{
+	padding: 12px;
+}
+
+.section_1 .menu { 
+    margin-left: -170px;
+}
+
+.section_1 .icon {
+	margin-left: -170px;
+}
+
+.section_1 .nomer{
+	margin-left: -170px;
+}
+
+.section_1 .email{
+	margin-left: -170;
+}
+.section_1 .knopka {
+	margin-left: -170px;
+}
+
+.section_1 .mobile_footer{
+	margin-left: -170px;
+}
+.section_1 .icon{
+	width: 170px;
+	margin-top: 45px;
+	position: absolute;
+	top: 150px;
 	padding: 10px;
+}
+
+.section_1 .nomer{
+	width: 170px;
+}
+
+.section_1 .fa{
+	display:block;
+}
+.section_1 .email{
+	width: 170px;
+}
+
+.section_1 .knopka{
+	width: 170px;
+}
+
+.section_1 .mobile_footer{
+	width: 170px;
+}
+.menu{
+    width: 170px;
 }
 }
 @media only screen and (max-width: 300px){
@@ -628,5 +681,4 @@ header label{
 	color: rgba(67,67,67,0.6);
 	margin-left: 0px;
 	margin-top: 3px;
-}
 }
