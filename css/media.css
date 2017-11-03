@@ -2,10 +2,18 @@ header label:hover{
     cursor: pointer;
     background: rgba(0,0,0,0.3);
 }
-@media only screen and (max-width: 1400px){
+@media only screen and (min-width: 1920px){
 header nav,
 header .leb-menu{
-	background-color: #FBFBFB;
+	background-color: white;
+	background-image:  url("../img/fon_menu.png");
+}
+.section_1{
+	background-image: url("../img/fon1.png");
+	background-repeat: no-repeat;
+	height: auto;
+	width: auto;
+	background-size: cover;
 }
 
 .text_smm{
@@ -38,11 +46,90 @@ header .leb-menu{
     margin-top: 2px;
     margin-left: 7%;
 }
+}
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1920px){
 header nav,
 header .leb-menu{
-	background-color: #FBFBFB;
+	background-color: white;
+	background-image:  url("../img/fon_menu.png");
+}
+.section_1{
+	background-image: url("../img/fon1.png");
+	background-repeat: no-repeat;
+	height: 1080px;
+	width: 1920px;
+	background-size: cover;
+}
+
+.text_smm{
+	display: none;
+}
+
+.text_logo{
+	display: none;
+}
+
+.nomer{
+	display: none;
+}
+
+.email{
+	display: none;
+}
+
+.knopka{
+	display: none;
+}
+
+.text_footer{
+	display: none;
+}
+
+.section_1 .container_2 img{
+	max-width: 200%;
+    height: auto;
+    margin-top: 2px;
+    margin-left: 7%;
+}
+@media only screen and (max-width: 1400px){
+.section_1 {
+	background-size: cover;
+}
+.text_smm{
+	display: none;
+}
+
+.text_logo{
+	display: none;
+}
+
+.nomer{
+	display: none;
+}
+
+.email{
+	display: none;
+}
+
+.knopka{
+	display: none;
+}
+
+.text_footer{
+	display: none;
+}
+
+.section_1 .container_2 img{
+	max-width: 200%;
+    height: auto;
+    margin-top: 2px;
+    margin-left: 7%;
+}
+
+@media only screen and (max-width: 1200px){
+.section_1 {
+	background-size: cover;
 }
 .text_smm{
 	display: none;
@@ -138,9 +225,8 @@ header .leb-menu{
 }
 }
 @media only screen and (max-width: 992px){
-header nav,
-header .leb-menu{
-	background-color: #FBFBFB;
+.section_1 {
+	background-size: cover;
 }
 .text_smm{
 	display: none;
