@@ -11,7 +11,9 @@
 	margin: 0;
 	font-family: Myriad;
 }
-
+body{
+	overflow: hidden;
+}
 .section_1 {
 	height: 900px;
 	background-image: url("../img/fon1.png");
