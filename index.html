@@ -2,151 +2,177 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<link rel="stylesheet" type="text/css" href="fonts-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  		pager:false,
+  		speed:1500,
+  		slideMargin:0,
+	});
+});
+		$(document).ready(function(){
+$('a[href*=#]').bind("click", function(e){
+var anchor = $(this);
+$('html, body').stop().animate({
+scrollTop: $(anchor.attr('href')).offset().top
+}, 1000);
+e.preventDefault();
+});
+return false;
+});
+	</script>
 </head>
 <body>
 <header>
-	<div class="wrapper">
-		<div class="section_1">
-			<div class="header">
-				<div class="block_1">
-					<span class="text_logo">Scéal Digital</span>
-				</div>
-				<div class="container_1">
-					<div class="logo">
-						<img src="img/logo.png">
-					</div>
-					<input type="checkbox" id="menu">
-					<div class="leb-menu">
-						<label for="menu"><img src="img/icono-menu.png"></label>
-					</div>
-					<nav class="menu" tabindex="0">
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Our Service</a></li>
-						</ul>
-						<ul class="menu_2">
-							<li class="menu_2"><a href="#">Contact Us</a></li>
-					<style>
-	.modalDialog {
-		position: fixed;
-		font-family: Arial, Helvetica, sans-serif;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: rgba(0,0,0,0.8);
-		z-index: 99999;
-		-webkit-transition: opacity 400ms ease-in;
-		-moz-transition: opacity 400ms ease-in;
-		transition: opacity 400ms ease-in;
-		display: none;
-		pointer-events: none;
-	}
+<div class="wrapper">
+	<div class="section_1">
+		<div class="header">
+			<p class="firma">Fitness<span> Club</span></p>
+			<input type="checkbox" id="menu">
+			<div class="leb-menu">
+				<label for="menu"><img src="img/icono-menu.png"></label>
+			</div>
+			<nav class="menu">
+				<div class="section-inner">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Особенности</a></li>
+					<li><a href="#2">Команда</a></li>
+					<li><a href="#3">Галерея</a></li>
+					<li><a href="#4">Цены</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
 
-	.modalDialog:target {
-		display: block;
-		pointer-events: auto;
-	}
-
-	.modalDialog > div {
-		width: 400px;
-		position: relative;
-		margin: 10% auto;
-		padding: 5px 20px 13px 20px;
-		border-radius: 10px;
-		background: #fff;
-		background: -moz-linear-gradient(#fff, #999);
-		background: -webkit-linear-gradient(#fff, #999);
-		background: -o-linear-gradient(#fff, #999);
-	}
-
-	.close {
-		background: #606061;
-		color: #FFFFFF;
-		line-height: 25px;
-		position: absolute;
-		right: -12px;
-		text-align: center;
-		top: -10px;
-		width: 24px;
-		text-decoration: none;
-		font-weight: bold;
-		-webkit-border-radius: 12px;
-		-moz-border-radius: 12px;
-		border-radius: 12px;
-		-moz-box-shadow: 1px 1px 3px #000;
-		-webkit-box-shadow: 1px 1px 3px #000;
-		box-shadow: 1px 1px 3px #000;
-	}
-
-	.close:hover { background: #00d9ff; }
-	</style>
-</head>
-
-<body>
-
-<a href="#openModal">Открыть модальное окно</a>
-
-<div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Закрыть" class="close">X</a>
-		<h2>Модальное окно</h2>
-		<p>Прмер простого модального окна, которое может быть создано с использованием CSS3.</p>
-		<p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>
+		<div class="slider">
+			<ul class="bxslider">
+		  		<li><img src="img/slider.jpg" alt="" /></li>
+		  		<li><img src="img/slider1.jpg" alt="" /></li>
+			</ul>
+		</div>
 	</div>
-</div>
-						</ul>
-					</nav>
-					<div class="icon">
-						<i class="fa fa-facebook" style="color: black" aria-hidden="true"><p class="text_smm" style="margin-left: 15px">Facebook</p></i>
-						<i class="fa fa-twitter" style="color: black" aria-hidden="true"><p class="text_smm" style="margin-left: 10px;">Twitter</p></i>
-						<i class="fa fa-linkedin"  style="color: black" aria-hidden="true"><p class="text_smm" style="margin-left: 12px;">Linkedin</p></i>
-					</div>
-					<div class="nomer">
-						<i class="fa fa-phone" style="color: black" aria-hidden="true"><p class="text_nomer" style="margin-left: 12px">+0 000 000 00 00 <span class="text_nomer_2">10:00 - 18:00</span></p></i>
-					</div>
-					<div class="email">
-						<i class="fa fa-envelope"  style="color: black" aria-hidden="true"><p class="text_nomer" style="margin-left: 12px">mail@scealdigital.com</p></i>
-					</div>
-					<div class="knopka" tabindex="0">
-						<a class='button' href='#'>Get 30 min free consultation!</a></p>
-					</div>
-					<div class="mobile_footer">
-						<p class="text_footer">© 2017 Scéal Digital. All rights reserved.</p>
-					</div>
-					<div class="navigation">
-						<p class="text_navigation">Navigation</p>
-					</div>
+</header>
+	<div  class="section_2">
+			<h1 >Добро пожаловать в Fitness club</h1>
+			<div class="container_1">
+				<div class="item">
+					<i  class="fa fa-star fa-2x " style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Стретчинг тренеровка</p>
+					<p class="description">Стретчинг увеличивает гибкость и подвижность суставов.Например, ношение сумок, завязывание шнурков или преследование уходящего автобуса будет для вас легким делом.</p>
 				</div>
-			</div>
+				<div class="item">
+					<i class="fa fa-heartbeat fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Кардио тренеровка</p>
+					<p class="description">Говоря о кардио-тренировках, мы подразумеваем комплекс упражнений, направленных на развитие сердечно-сосудистой системы организма и
+					устойчивым иммунитетом </p>
+				</div>
+				<div class="item">
+					<i class="fa fa-smile-o fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Гимнастика</p>
+					<p class="description">Ежедневные упражнения помогут ребенку развить двигательные навыки и умения, укрепить осанку. У ребенка вырабатывается сила воли, твердость характера, уверенность в движениях. </p>
+				</div>
+				<div class="item">
+					<i class="fa fa-users fa-2x" style="color: #E25050" aria-hidden="true"></i>
+					<p class="caption">Аэробика</p>
+					<p class="description">Занятия оздоровительной аэробикой стимулируют работу сердечно – сосудистой и дыхательной систем.Происходит меньше простудных забловении.</p>
+				</div>
+		</div>
+	</div>
+	<div class="section_3" id="2">
+		<h1 >Лучшие Тренера</h1>
 			<div class="container_2">
-				<img src="img/foto1.jpg">
-				<div class="decription">
-					<span class="text_3">Who we are?</span>
-					<p class="text_4">Scéal Digital aims to combine Sharon's experience of traditional sales and customer service with her enthusiasm and knowledge of digital marketing.  In her previous roles with companies including Aviva Health, Three and Vodafone Sharon developed a customer centric approach.</p><br>
-					<p class="text_4">Having spotted the opportunities that social media and digital platforms open up to businesses, Sharon completed a Level 8 Certificate in Digital Marketing in Cork Institute of Technology.</p><br>
-					<p class="text_4">Scéal Digital brings the digital know how to your business while focusing on building relationships with new and existing customers.</p>
+				<div class="item_1">
+					<li><span class="descr">Тренер по стретчингу</span><img src="img/item1.jpg" alt="Alt"></li>
 				</div>
+				<div class="item_1">
+					<li><span class="descr">Тренер по плаванию</span><img src="img/item2.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_1">		
+					<li><span class="descr">Тренер по гимнастике</span><img src="img/item3.jpg" alt="Alt"></li>
+				</div>
+				<div class="item_1">	
+					<li><span class="descr">Тренер по аэробике</span><img src="img/item4.jpg" alt="Alt"></li>
+				</div>	
 			</div>
-			<div class="container_3">
-				<p class="text_5">+0 000 000 00 00</p>
-				<p class="text_5">mail@scealdigital.com</p>
-				<p class="text_6">© 2017 Scéal Digital. All rights reserved</p>
+	</div>
+	<div class="section_4" id="3">
+		<h1>Наша галерея</h1>
+		<div class="container_3">
+			<div class="item_1"><img src="img/item2.1.jpg" alt="">
 			</div>
-			<div class="container_4">
-				<p class="text_7">10:00 - 18:00</p>
-				<p class="text_8">Anytime</p>
+			<div class="item_1"><img src="img/item2.2.jpg" alt="">
+			</div>
+			<div class="item_1"><img src="img/item2.3.jpg" alt="">
+			</div>
+			<div class="item_1"><img src="img/item2.4.jpg" alt="">
+			</div>
+		</div>
+		<div class="container_3">
+			<div class="item_1"><img src="img/item2.5.jpg" alt="">
+			</div>
+			<div class="item_1"><img src="img/item2.6.jpg" alt="">
+			</div>
+			<div class="item_1"><img src="img/item2.7.jpg" alt="">
+			</div>
+			<div class="item_1"><img src="img/item2.8.jpg" alt="">
 			</div>
 		</div>
 	</div>
-
-</header>
-
+	<div class="section_5" id="4">
+		<h1>Цены и планы</h1>
+		<div class="container_5">
+			<div class="item_1">
+				<div class="header">
+					<p class="text_1">Начальный</p>
+				</div>
+				<i class="fa fa-check-circle" aria-hidden="true"> - 5 тренеровик в неделю</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3500 грн</i><br>
+			</div>
+			<div class="item_1">
+				<div class="header">
+					<p class="text_1">Базовый</p>
+				</div>
+				<i class="fa fa-check-circle" aria-hidden="true"> - 7 тренеровик в неделю</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3700 грн</i><br>
+			</div>
+			<div class="item_1">
+				<div class="header">
+					<p class="text_1">Профессионал</p>
+				</div>
+				<i class="fa fa-check-circle" aria-hidden="true"> - 9 тренеровик в неделю</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Выбор любого наставника</i><br>
+				<i class="fa fa-check-circle" aria-hidden="true"> - Абонемент на месяц 3900 грн</i><br>
+			</div>
+		</div>
+		<div class="section_6">
+			<form>
+				<div class="container_6">
+					<div>
+						<input type="name" name="Имя" placeholder="Имя*">
+					</div>				
+					<div >
+						<input type="email" name="email" placeholder="Email*">
+					</div>
+					<div >
+						<input type="text" name="text" placeholder="Вид спорта*">
+					</div>
+				</div>
+				<div class="container_7">
+					<textarea placeholder="Ваше сообщение*"></textarea><br>
+				</div>
+				<div>
+					<input type="submit" name="submit" placeholder="Отправить заявку*"> 
+				</div>
+			</form>
+		</div>
 </body>
 </html>
