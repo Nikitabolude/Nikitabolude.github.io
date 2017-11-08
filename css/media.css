@@ -57,8 +57,9 @@ header label:hover{
 }
 @media only screen and  (max-width: 1150px){
     .section_3 {
-        height: 800px;
-}
+        height: auto;
+        padding: 50px;
+    }
 
     .section_3 .container_2{
         display: flex;
@@ -234,6 +235,10 @@ header label:hover{
         width: 291px;
         max-width: 100%;
     }
+    .section_3 {
+        height: auto;
+        padding: 50px;
+    }
 }
 @media all and (max-width: 768px){
     .section_1 .firma{
@@ -279,7 +284,7 @@ header label:hover{
     }
 
     .section_2 {
-        height: 350px;
+        height: 550px;
 }
 
     .section_2 .fa{
@@ -299,9 +304,10 @@ header label:hover{
         max-width: 500px;
         padding:  10px;
 }
-    .section_3 {
-        height: 800px;
-}
+   .section_3 {
+        height: auto;
+        padding: 50px;
+    }
 
     .section_3 .container_2{
         display: flex;
@@ -442,27 +448,24 @@ header label:hover{
 }
 @media all and (max-width: 550px){
     .section_3 {
-        height: 1500px;
-}
+        height: auto;
+        padding: 50px;
+    }
     .section_3 h1{
         text-align: center;
         margin-top: 20px;
         font-size: 45px;
         color: white;
 }
-
-    .section_3 .container_2{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 25px;
 }
 
-    .section_3 .item_2{
-        width: 20%;
-        margin-left: 20px;
-        flex: 1 0 340px;
-        max-width: 500px;
-}
+    .section_3 .item{
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .section_3 img{
+        max-width: 82%;
+    }
 }
 
 @media all and (max-width: 455px){

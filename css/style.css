@@ -3,6 +3,10 @@
 	padding: 0px;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 .section_1 {
 	height: 410px;
 }
@@ -142,12 +146,12 @@ header .leb-menu{
 .section_3 .container_2{
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 	margin-top: 40px;
 }
 
 .section_3 .item_1{
-	width: 250px;
-	margin-left: 20px;
+	width: 270px;
 }
 
 .ourTeam ul,
