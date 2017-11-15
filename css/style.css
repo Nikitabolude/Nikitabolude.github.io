@@ -207,6 +207,10 @@ html {
 	margin-top: 3rem;
 }
 
+.section_1 .container_2 .description{
+	font-weight: bold;
+}
+
 
 .section_1 .line_2{
 	display: block;
