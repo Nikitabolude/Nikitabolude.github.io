@@ -1,0 +1,274 @@
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+    height: 40px;
+}
+@media only screen and (max-width: 992px){
+	#section_1 .header{
+		height: auto;
+		padding-bottom: 50px;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#section_1 .number{
+		margin-left: 0%;
+		margin-top: 30px;
+	}
+
+	#section_1 .numb{
+		margin-left: 0px;
+	}
+
+	#section_1 .numb__number_1{
+		text-align: center;
+		margin-top: 15px;
+		font-size: 2.2vw;
+	}
+
+	#section_1 .numb__number_2{
+		text-align: center;
+		font-size: 2.2vw;
+	}
+
+	#section_1 .numb__number_3{
+		text-align: center;
+		font-size: 2.2vw;
+	}
+
+	#section_1 .massage{
+		display: none;
+	}
+
+	#section_1 .btn__btn_1{
+		margin-top: 30px;
+	}
+
+	#section_1 .menu {
+        z-index: 100;
+        margin-left: -200px;
+
+}
+    #section_1 .menu ul {
+         margin: 0;
+         list-style: none;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         margin-top: 0px;
+}
+    #section_1 .menu{
+        position: absolute;
+        width: 200px;
+    }
+	
+	header nav, header .leb-menu{
+		display: block;
+		height: 40px;
+	}
+
+	 header  #section_1 label{
+		display: flex;
+		padding: 6px;
+	}
+
+    #section_1 .menu ul{
+        flex-direction: column;
+        justify-content: none;
+		align-items: none;
+    }
+
+    #menu:checked ~ .menu{
+        margin: 0px;
+    }
+
+	#section_1 .menu{
+    	height: 320px;
+    	position: absolute;
+    }
+    
+    #section_1 .menu li{
+    	padding: 0;
+    }
+	
+	#section_1 .help{
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+		padding-bottom: 45px;
+		padding-top: 30px;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#section_1 .help__one{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#section_1 .help__two{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_1 .help__tree{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_1 .help img{
+		padding-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_1 .help__text{
+		text-align: center;
+		width: 90%;
+	}
+
+	#section_1 .help__text span{
+		font-size: 3vw;
+	}
+
+	#section_1 .help__text p{
+		font-size: 2.5vw;
+		color: #ffcd00;
+	}
+	
+
+	#section_2 .container_1__head{
+		text-align: center;
+	}
+
+	#section_2 .container_1__li{
+		display: flex;
+		justify-content: center;
+	}
+
+	#section_2 .container_1__text_1{
+		font-size: 1.5rem;
+		text-align:auto;
+	}
+
+	#section_2 .container_1__line{
+		width: 10%;
+	}
+
+	#section_2 .container_1__line_1{
+		width: 10%;
+	}
+
+	#section_3 {
+		background-color: rgba(211,211,211,0.9);
+		margin-top: 30px;
+	}
+
+	#section_3 .container_1{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 0%;
+		padding-right: 0%;
+		margin-top: 0px;
+	}
+
+	#section_3 .item_1{
+		width: 55%;
+		margin-top: 30px;
+	}
+
+	#section_3 .item_1__text_1{
+		font-size: 2.5vw;
+	}
+
+	#section_4 .cont{
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	#section_4 .container_1{
+		flex-direction: column;
+		padding-left: 0%;
+		padding-right: 0%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#section_4 .block{
+		width: 100%;
+	}
+
+	#section_4 .footer{
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#section_6 .help{
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+		padding-bottom: 45px;
+		padding-top: 30px;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#section_6 .help__one{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#section_6 .help__two{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_6 .help__tree{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_6 .help img{
+		padding-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_6 .help__text{
+		width: 90%;
+	}
+
+	#section_6 .help__text p{
+		font-size: 2.5vw;
+		text-align: center;
+	}
+
+
+}
+
+@media only screen and (max-width: 500px){
+	#section_1 .fon__text_1{
+		display: none;
+	}
+	#section_6 .help__one{
+		width: 10%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#section_6 .help__two{
+		width: 10%;
+	}
+
+	#section_6 .help__tree{
+		width: 10%;
+	}
+}
+
+@media only screen and (max-width:320px){
+	#section_4 .footer__text{
+		font-size: 2rem;
+	}
+}
